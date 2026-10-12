@@ -2,7 +2,7 @@
 """
 Flask backend API for Disease Prediction
 """
-
+from pathlib import Path
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pickle
@@ -12,7 +12,7 @@ import time
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
-
+BASE_DIR = Path(__file__).resolve().parent
 model = None
 symptoms_list = None
 diseases_list = None
@@ -22,13 +22,13 @@ diseases_list = None
 def load_model():
     global model, symptoms_list, diseases_list
 
-    with open('model.pkl', 'rb') as f:
+    with open(BASE_DIR / 'model.pkl', 'rb') as f:
         model = pickle.load(f)
 
-    with open('symptoms_list.json') as f:
+    with open(BASE_DIR / 'symptoms_list.json', encoding='utf-8') as f:
         symptoms_list = json.load(f)
 
-    with open('diseases_list.json') as f:
+    with open(BASE_DIR / 'diseases_list.json', encoding='utf-8') as f:
         diseases_list = json.load(f)
 
     print("[SUCCESS] Model + Data Loaded")
