@@ -9,6 +9,7 @@ import pickle
 import json
 import pandas as pd
 import time
+import gzip
 
 app = Flask(__name__, static_folder='static', static_url_path='')
 CORS(app)
@@ -18,12 +19,20 @@ symptoms_list = None
 diseases_list = None
 
 
+
 # ---------------- LOAD ----------------
 def load_model():
     global model, symptoms_list, diseases_list
 
-    with open(BASE_DIR / 'model.pkl', 'rb') as f:
-        model = pickle.load(f)
+    compressed_model = BASE_DIR / 'model.pkl.gz'
+    original_model = BASE_DIR / 'model.pkl'
+
+    if compressed_model.exists():
+        with gzip.open(compressed_model, 'rb') as f:
+            model = pickle.load(f)
+    else:
+        with open(original_model, 'rb') as f:
+            model = pickle.load(f)
 
     with open(BASE_DIR / 'symptoms_list.json', encoding='utf-8') as f:
         symptoms_list = json.load(f)
@@ -32,6 +41,7 @@ def load_model():
         diseases_list = json.load(f)
 
     print("[SUCCESS] Model + Data Loaded")
+
 
 
 # ---------------- ROUTES ----------------

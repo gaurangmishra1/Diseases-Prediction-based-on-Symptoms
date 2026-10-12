@@ -1,5 +1,7 @@
+
 venv/
 __pycache__/
 *.py[cod]
 *.pkl
+*.pkl.gz
 .env
