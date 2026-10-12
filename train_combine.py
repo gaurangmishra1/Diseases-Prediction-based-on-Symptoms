@@ -15,12 +15,14 @@ from sklearn.metrics import accuracy_score, f1_score, classification_report, con
 from xgboost import XGBClassifier
 from lightgbm import LGBMClassifier
 
-print("Loading dataset...")
-df_comb = pd.read_csv(
-r"C:\Users\LENOVO\OneDrive\Desktop\dummy\Disease-Prediction\Dataset\dis_sym_dataset_comb.csv")
-df_norm = pd.read_csv(
-r"C:\Users\LENOVO\OneDrive\Desktop\dummy\Disease-Prediction\Dataset\dis_sym_dataset_norm.csv")
+from pathlib import Path
 
+print("Loading dataset...")
+BASE_DIR = Path(__file__).resolve().parent
+DATASET_DIR = BASE_DIR / "Dataset"
+
+df_comb = pd.read_csv(DATASET_DIR / "dis_sym_dataset_comb.csv")
+df_norm = pd.read_csv(DATASET_DIR / "dis_sym_dataset_norm.csv")
 
 # Split features & labels
 X = df_comb.iloc[:, 1:]

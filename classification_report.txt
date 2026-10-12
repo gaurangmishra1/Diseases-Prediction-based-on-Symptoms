@@ -6,7 +6,7 @@
                                               Alzheimer     1.0000    0.6667    0.8000         3
                                              Amoebiasis     0.0000    0.0000    0.0000         1
                                                 Anaemia     0.0000    0.0000    0.0000         4
-                                                Anthrax     0.9623    1.0000    0.9808        51
+                                                Anthrax     0.9804    0.9804    0.9804        51
                                            Appendicitis     1.0000    1.0000    1.0000         1
                                               Arthritis     1.0000    1.0000    1.0000         4
                                      Aseptic meningitis     0.0000    0.0000    0.0000         1
@@ -14,13 +14,12 @@
                                                  Autism     1.0000    1.0000    1.0000         3
                                  Bad Breath (Halitosis)     1.0000    1.0000    1.0000         1
                                            Bell's Palsy     1.0000    1.0000    1.0000         1
-                                               Beriberi     0.7500    1.0000    0.8571         3
+                                               Beriberi     0.6000    1.0000    0.7500         3
                                             Black Death     0.0000    0.0000    0.0000         1
                                           Bleeding Gums     1.0000    1.0000    1.0000         3
                                                Botulism     0.5000    1.0000    0.6667         1
                                            Brain Tumour     1.0000    1.0000    1.0000         3
                               Breast Cancer / Carcinoma     1.0000    1.0000    1.0000         6
-                                             Bronchitis     0.0000    0.0000    0.0000         0
                                          Bubonic plague     1.0000    0.3333    0.5000         3
                                                  Bunion     1.0000    1.0000    1.0000         1
                                 Campylobacter infection     0.0000    0.0000    0.0000         1
@@ -35,7 +34,7 @@
                                                  Chorea     1.0000    1.0000    1.0000         1
                                                 Colitis     1.0000    1.0000    1.0000         3
                                       Colorectal Cancer     1.0000    1.0000    1.0000         2
-                                            Common cold     1.0000    0.2500    0.4000         4
+                                            Common cold     0.0000    0.0000    0.0000         4
                    Congenital anomalies (birth defects)     1.0000    1.0000    1.0000         1
                                Congestive heart disease     1.0000    0.5000    0.6667         2
                                        Corneal Abrasion     0.0000    0.0000    0.0000         1
@@ -43,9 +42,10 @@
                 Crimean Congo haemorrhagic fever (CCHF)     1.0000    0.8571    0.9231         7
                                             Dehydration     1.0000    1.0000    1.0000         1
                                                Dementia     0.6667    1.0000    0.8000         2
-                                                 Dengue     1.0000    1.0000    1.0000         2
-                                      Diabetes Mellitus     1.0000    1.0000    1.0000         1
+                                                 Dengue     1.0000    0.5000    0.6667         2
+                                      Diabetes Mellitus     0.0000    0.0000    0.0000         1
                                    Diabetic Retinopathy     1.0000    1.0000    1.0000         2
+                                             Diphtheria     0.0000    0.0000    0.0000         0
                                         Down's Syndrome     1.0000    1.0000    1.0000         2
                                               Dysentery     0.0000    0.0000    0.0000         1
                                                   Ebola     1.0000    1.0000    1.0000         3
@@ -60,13 +60,13 @@
                                         Gaming disorder     1.0000    1.0000    1.0000         1
                                                Gangrene     1.0000    1.0000    1.0000         2
                                          Genital herpes     1.0000    1.0000    1.0000         1
-                                               Glaucoma     0.6667    1.0000    0.8000         4
+                                               Glaucoma     1.0000    1.0000    1.0000         4
                                                  Goitre     1.0000    0.9167    0.9565        12
                                               Gonorrhea     0.5000    1.0000    0.6667         1
                   Heat-Related Illnesses and Heat waves     1.0000    0.9333    0.9655        15
-                                            Hepatitis A     1.0000    0.8000    0.8889        15
+                                            Hepatitis A     1.0000    0.8667    0.9286        15
                                             Hepatitis B     0.0000    0.0000    0.0000         1
-                                    High risk pregnancy     1.0000    1.0000    1.0000         2
+                                    High risk pregnancy     0.6667    1.0000    0.8000         2
                                         Hyperthyroidism     0.9444    1.0000    0.9714        17
                                             Hypothyroid     1.0000    1.0000    1.0000         2
                              Inflammatory Bowel Disease     1.0000    0.6667    0.8000         3
@@ -94,13 +94,13 @@
                                                 Measles     0.6000    0.7500    0.6667         4
                                                Melanoma     0.6667    1.0000    0.8000         4
 Middle East respiratory syndrome coronavirus (MERS‐CoV)     0.0000    0.0000    0.0000         1
-                                               Migraine     0.6000    1.0000    0.7500         3
+                                               Migraine     0.4286    1.0000    0.6000         3
                                           Mononucleosis     1.0000    1.0000    1.0000         1
                                         Mouth Breathing     1.0000    0.8750    0.9333         8
                                      Multiple sclerosis     0.5000    1.0000    0.6667         2
-                                                  Mumps     0.6667    1.0000    0.8000         2
+                                                  Mumps     1.0000    1.0000    1.0000         2
                                       Myasthenia gravis     1.0000    1.0000    1.0000         3
-                   Myocardial Infarction (Heart Attack)     1.0000    0.9902    0.9951       205
+                   Myocardial Infarction (Heart Attack)     0.9951    0.9902    0.9927       205
                                                  Myopia     0.3333    1.0000    0.5000         2
                                              Narcolepsy     1.0000    1.0000    1.0000         2
                                            Nasal Polyps     0.7500    1.0000    0.8571         3
@@ -112,6 +112,7 @@ Middle East respiratory syndrome coronavirus (MERS‐CoV)     0.0000    0.0000  
                                             Oral Cancer     1.0000    1.0000    1.0000         9
                                          Osteoarthritis     1.0000    1.0000    1.0000         1
                                           Osteomyelitis     0.6667    1.0000    0.8000         2
+                                      Paratyphoid fever     0.0000    0.0000    0.0000         0
                                     Parkinson's Disease     1.0000    1.0000    1.0000         3
                             Pelvic inflammatory disease     1.0000    0.8571    0.9231         7
                       Perennial Allergic Conjunctivitis     0.9286    0.9286    0.9286        14
@@ -158,11 +159,11 @@ Middle East respiratory syndrome coronavirus (MERS‐CoV)     0.0000    0.0000  
                                        Warkany syndrome     1.0000    1.0000    1.0000         5
                                                   Warts     0.0000    0.0000    0.0000         1
                                                    Yaws     0.0000    0.0000    0.0000         0
-                                           Yellow Fever     1.0000    0.7500    0.8571         4
+                                           Yellow Fever     1.0000    1.0000    1.0000         4
                                      Zika virus disease     1.0000    0.4000    0.5714         5
                                     lactose intolerance     0.6000    0.7500    0.6667         4
                                            papilloedema     0.0000    0.0000    0.0000         1
 
-                                               accuracy                         0.9084       884
-                                              macro avg     0.7357    0.7623    0.7255       884
-                                           weighted avg     0.9264    0.9084    0.9049       884
+                                               accuracy                         0.9061       884
+                                              macro avg     0.7190    0.7487    0.7112       884
+                                           weighted avg     0.9210    0.9061    0.9020       884
